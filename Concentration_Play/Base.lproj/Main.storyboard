@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concentration_Play" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-3b-rgk">
+                                <rect key="frame" x="50" y="70" width="275" height="472"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7Ed-d5-Oek">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKH-EH-4tX" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJu-iJ-Dtn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxW-4q-HKW" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="101.5" y="0.0" width="72" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAf-yE-ya0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSw-kT-o0a" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="203.5" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gb2-Au-aXo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hKm-cb-DUT">
+                                        <rect key="frame" x="0.0" y="123" width="275" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8e-Xa-aWK" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MRB-Uf-xVN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-vz-71l" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="101.5" y="0.0" width="72" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhP-vB-Wdx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkM-Ml-n7j" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="203.5" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZY-ap-n7V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Twl-e6-g6V">
+                                        <rect key="frame" x="0.0" y="246" width="275" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-b6-bEa" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skF-sZ-hM0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrW-Kf-GOb" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="101.5" y="0.0" width="72" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jt0-UE-YBi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-3G-TaD" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="203.5" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jf4-cI-5YG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="s5i-gA-Vi1">
+                                        <rect key="frame" x="0.0" y="369" width="275" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Gt-PNx" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d79-cC-HbT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU8-eV-UB9" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="101.5" y="0.0" width="72" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orv-MX-Vn1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-ru-dZx" customClass="RoundedButtons" customModule="Concentration_Play" customModuleProvider="target">
+                                                <rect key="frame" x="203.5" y="0.0" width="71.5" height="103"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corrnarRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCardBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLd-gY-b5M"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="mKo-3w-Bcn"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubB-N6-Wka">
+                                <rect key="frame" x="112" y="592" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CmD-ly-fGy"/>
+                                    <constraint firstAttribute="height" constant="30" id="Swn-9X-HaC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ubB-N6-Wka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0wC-mL-dbr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YZb-3b-rgk" secondAttribute="trailing" constant="50" id="Eps-gP-SWl"/>
+                            <constraint firstItem="YZb-3b-rgk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OCj-55-aoB"/>
+                            <constraint firstItem="ubB-N6-Wka" firstAttribute="top" secondItem="YZb-3b-rgk" secondAttribute="bottom" constant="50" id="TMf-56-kaf"/>
+                            <constraint firstItem="YZb-3b-rgk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fQw-X7-m05"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ubB-N6-Wka" secondAttribute="bottom" constant="45" id="kMQ-Ry-Pmd"/>
+                            <constraint firstItem="YZb-3b-rgk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p7w-53-eut"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flipCountLabel" destination="ubB-N6-Wka" id="Nkm-e5-hwZ"/>
+                        <outletCollection property="cardButtons" destination="GxW-4q-HKW" collectionClass="NSMutableArray" id="z9r-H0-OoU"/>
+                        <outletCollection property="cardButtons" destination="xKH-EH-4tX" collectionClass="NSMutableArray" id="Lzo-U0-3lQ"/>
+                        <outletCollection property="cardButtons" destination="KkM-Ml-n7j" collectionClass="NSMutableArray" id="rgx-ve-rCk"/>
+                        <outletCollection property="cardButtons" destination="o8e-Xa-aWK" collectionClass="NSMutableArray" id="XWo-w7-yLE"/>
+                        <outletCollection property="cardButtons" destination="hZf-3G-TaD" collectionClass="NSMutableArray" id="Mhl-Za-nsB"/>
+                        <outletCollection property="cardButtons" destination="qcd-b6-bEa" collectionClass="NSMutableArray" id="GwA-X0-8fg"/>
+                        <outletCollection property="cardButtons" destination="zFS-vz-71l" collectionClass="NSMutableArray" id="wnW-yd-kHB"/>
+                        <outletCollection property="cardButtons" destination="IrW-Kf-GOb" collectionClass="NSMutableArray" id="dHH-pA-3mf"/>
+                        <outletCollection property="cardButtons" destination="wSw-kT-o0a" collectionClass="NSMutableArray" id="gWD-42-IO3"/>
+                        <outletCollection property="cardButtons" destination="EU8-eV-UB9" collectionClass="NSMutableArray" id="yap-mo-eAx"/>
+                        <outletCollection property="cardButtons" destination="hE1-Gt-PNx" collectionClass="NSMutableArray" id="Je5-4w-tCO"/>
+                        <outletCollection property="cardButtons" destination="9cI-ru-dZx" collectionClass="NSMutableArray" id="imo-bx-arJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
